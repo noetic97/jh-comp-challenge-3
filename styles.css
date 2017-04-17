@@ -1,0 +1,15 @@
+body {
+  height: 1500px;
+  width: 1300px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+}
+
+.aside-left {
+
+}
