@@ -1,9 +1,14 @@
-body {
+html {
   box-sizing: border-box;
+}
+
+  body {
   display: flex;
   height: 1500px;
   width: 1300px;
 }
+
+/* left side navigation header*/
 
 .user-id {
   display: flex;
@@ -29,17 +34,23 @@ header {
   color: rgb(111, 126, 149)
 }
 
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav a {
+  color: rgb(175, 175, 175);
+}
+
+/* main section */
+
 main {
 
 }
 
 .search-bar {
   display: flex;
-  height: 40px;
-}
-
-.search-buttons{
-  flex: 1 0 0;
 }
 
 .search-bar input {
@@ -47,7 +58,56 @@ main {
   height: 40px;
 }
 
-.header-nav {
+.search-buttons1,
+.search-buttons2,
+.search-buttons3,
+.search-buttons4 {
+  flex: 1 0 0;
+}
+
+
+.search-buttons1 {
+}
+
+.search-buttons2 {
+}
+
+.search-buttons3 {
+}
+
+.search-buttons4 {
+}
+
+/* customer service container */
+
+.cust-service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.cust-service {
+  flex 50% 0 0;
+}
+
+.cust-service img {
+  vertical-align: middle;
+}
+
+.cust-service-buttons {
+  flex: 50% 0 0;
+}
+
+.cust-service-btn1,
+.cust-service-btn2,
+.cust-service-btn3,
+.cust-service-btn4 {
+  border-radius: 25px;
+}
+
+.header-nav a {
+  text-decoration: none;
 }
 
 section img {
@@ -55,13 +115,9 @@ section img {
   height: 20px;
 }
 
-header nav {
-  display: flex;
-  flex-direction: column;
-}
 
-header nav a {
-    color: rgb(175, 175, 175);
+.header-nav{
+
 }
 
 .bottom-container {
@@ -109,3 +165,29 @@ td {
 .circle-graph p {
 
   }
+
+.social-section button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  color: white;
+  margin: 0;
+}
+
+.social-section button img {
+  text-align: left;
+}
+
+.facebook {
+  background-color: rgb(59, 89, 152);
+}
+
+.twitter {
+  background-color: rgb(85, 172, 238);
+}
+
+.linkedin {
+  background-color: rgb(0, 122, 185);
+}
