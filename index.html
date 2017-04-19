@@ -5,32 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="user-id">
-      <img src="assets/imgs/cat-headshot.jpg" alt="">
-      <h2>Newton Bradley<span>v</span></h2>
+      <img src="assets/imgs/cat-headshot.png" alt="">
+      <div class="name-span">
+        <h2 class="user-name">Newton Barley</h2>
+        <span>v</span>
+      </div>
     </div>
-    <nav class="aside-nav">
+    <nav class="header-nav-main header-nav">
       <h2>Main</h2>
-      <a href="#">HOME</a>
-      <a href="#">JOBS</a>
-      <a href="#">RESUMES</a>
-      <a href="#">TASKS</a>
-      <a href="#">CALENDAR</a>
+      <a href="#"><img src="assets/light-icons/home-light.svg" class="icon icon1" alt="">HOME</a>
+      <a href="#"><img src="assets/light-icons/briefcase-light.svg" class="icon icon2" alt="">JOBS</a>
+      <a href="#"><img src="assets/light-icons/resume-light.svg" class="icon icon3" alt="">RESUMES</a>
+      <a href="#"><img src="assets/light-icons/clipboard-light.svg" class="icon icon4" alt="">TASKS</a>
+      <a href="#"><img src="assets/light-icons/calendar-light.svg" class="icon icon5" alt="">CALENDAR</a>
     </nav>
-    <nav>
+    <nav class="header-nav-admin header-nav">
       <h2>Admin</h2>
-      <a href="#">USERS</a>
-      <a href="#">LOCATIONS</a>
-      <a href="#">WORKFLOWS</a>
-      <a href="#">JOB BOARDS</a>
-      <a href="#">SOCIAL</a>
+      <a href="#"><img src="assets/light-icons/users-light.svg" class="icon icon6" alt="">USERS</a>
+      <a href="#"><img src="assets/light-icons/signs-light.svg" class="icon icon7" alt="">LOCATIONS</a>
+      <a href="#"><img src="assets/light-icons/network-light.svg" class="icon icon8" alt="">WORKFLOWS</a>
+      <a href="#"><img src="assets/light-icons/papers-stack-light.svg" class="icon icon9" alt="">JOB BOARDS</a>
+      <a href="#"><img src="assets/light-icons/multimedia-light.svg" class="icon icon10" alt="">SOCIAL</a>
     </nav>
-    <nav>
+    <nav class="header-nav-category header-nav">
       <h2>Categories</h2>
       <a href="#">Administrative</a>
       <a href="#">Design</a>
@@ -41,25 +45,27 @@
   <main>
     <section class="top-nav-search">
       <section class="search-bar">
-        <button class="search-buttons1"><img src="assets/dark-icons/menu-dark.svg" alt=""></button>
+        <button class="search-button search-button1"><p>&#9664;</p><img src="assets/dark-icons/menu-dark.svg" class="icon" alt=""></button>
         <input type="text" placeholder="Search for a job, task or resume">
-        <button class="search-buttons2"><img src="assets/dark-icons/user-plus-dark.svg" alt=""></button>
-        <button class="search-buttons3"><img src="assets/dark-icons/calendar-dark.svg" alt=""></button>
-        <button class="search-buttons4"><img src="assets/dark-icons/dot-matrix-dark.svg" alt=""></button>
+        <button class="search-button"><img src="assets/dark-icons/user-plus-dark.svg" class="icon" alt=""></button>
+        <button class="search-button"><img src="assets/dark-icons/calendar-dark.svg" class="icon" alt=""></button>
+        <button class="search-button"><img src="assets/dark-icons/dot-matrix-dark.svg" class="icon" alt=""></button>
       </section>
       <div class="cust-service-container">
         <section class="cust-service">
-          <img src="assets/dark-icons/signs-dark.svg" alt="">
           <h1>Customer Service Representative</h1>
-          <p>San Francisco, CA &#183;<span>&nbsp;Preview this post</span></p>
+          <div class="location-preview">
+            <img src="assets/dark-icons/signs-dark.svg" class="icon" alt="">
+            <p>San Francisco, CA &#183;<span>&nbsp;Preview this post</span></p>
+          </div>
         </section>
         <section class="cust-service-buttons">
           <button class="cust-service-btn1"><span>&#9679;</span>OPEN</button>
-          <button class="cust-service-btn2"><img src="assets/dark-icons/bookmark-dark.svg" alt=""></button>
-          <button class="cust-service-btn3"><img src="assets/dark-icons/edit-button-dark.svg" alt=""></button>
-          <button class="cust-service-btn4"><img src="assets/dark-icons/trash-dark.svg" alt=""></button>
+          <button class="cust-service-btn2"><img src="assets/dark-icons/bookmark-dark.svg" class="icon" alt=""></button>
+          <button class="cust-service-btn3"><img src="assets/dark-icons/edit-button-dark.svg" class="icon" alt=""></button>
+          <button class="cust-service-btn4"><img src="assets/dark-icons/trash-dark.svg" class="icon" alt=""></button>
         </section>
-        <nav class="header-nav">
+        <nav class="main-nav">
           <a href="">SUMMARY</a>
           <a href="">APPLICANTS</a>
           <a href="">JOB BOARD</a>
@@ -69,8 +75,8 @@
           <a href="">NOTIFICATIONS</a>
         </nav>
       </div>
-
     </section>
+
     <section class="middle-charts">
       <div class="circle-graphs">
         <div class="circle-graph">
@@ -85,18 +91,23 @@
           <p>912</p>
           <p>FORWARDS</p>
         </div>
+        <button>TOTALS &#183; Out of 5,231 views</button>
       </div>
-      <button>TOTALS &#183; Out of 5,231 views</button>
       <div class="bar-graph">
-        <img src="" alt="">
+        <img src="assets/imgs/bar-chart.png" alt="">
         <button>APPLICANTS/DAY</button>
       </div>
     </section>
+    <div class="line-break-container">
+      <div class="line-break"></div>
+      <button><span>v</span></button>
+      <div class="line-break"></div>
+    </div>
     <div class="bottom-container">
       <table class="job-table">
         <tr>
           <th class="table-column1">JOB DESCRIPTION</th>
-          <th class="table-column2"><button>EDIT</button></th>
+          <th class="table-column2"><button><img src="assets/light-icons/edit-button-light.svg" alt="">EDIT</button></th>
         </tr>
         <tr>
           <td class="table-column1">POSITION TITLE</td>
@@ -127,8 +138,8 @@
               towards a streamlined cloud solution.</td>
         </tr>
         <tr>
-          <td class="table-column1">HIRING LEAD</td>
-          <td class="table-column2"><img src="" alt="">Tom Tizzy</td>
+          <td class="table-column1 hiring-lead">HIRING LEAD</td>
+          <td class="table-column2 table-image"><img src="assets/imgs/hiring-manager.jpg" alt="">Tom Tizzy</td>
         </tr>
         <tr>
           <td class="table-column1">APPROVED SALARY</td>
@@ -136,9 +147,33 @@
         </tr>
       </table>
       <section class="social-section">
-        <button class="facebook"><img src="assets/social-icons/facebook.svg" alt="">Post to Facebook</button>
-        <button class="twitter"><img src="assets/social-icons/twitter.svg" alt="">Tweet this Job</button>
-        <button class="linkedin"><img src="assets/social-icons/linkedin.svg" alt="">Post to Linkedin</button>
+        <button class="facebook"><img src="assets/social-icons/facebook.svg" class="icon" alt="">Post to Facebook</button>
+        <button class="twitter"><img src="assets/social-icons/twitter.svg" class="icon" alt="">Tweet this Job</button>
+        <button class="linkedin"><img src="assets/social-icons/linkedin.svg" class="icon" alt="">Post to Linkedin</button>
+        <div>
+          <div class="copy-title">
+            <img src="assets/dark-icons/world-dark.svg" class="icon" alt="">
+            <h3>Link to this Job</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <input type="text" class="copy-input" placeholder="http://loremipsum.dol/sit/amety..."><button type="button" class="copy-buttons">Copy</button>
+        </div>
+        <div>
+          <div class="copy-title">
+            <img src="assets/dark-icons/press-button-dark.svg" class="icon" alt="">
+            <h3>Use the Button Widget</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <input type="text" class="copy-input" placeholder="<script type=&#34;text/javascript&#34; s..."><button type="button" class="copy-buttons">Copy</button>
+        </div>
+        <div>
+          <div class="copy-title">
+            <img src="assets/dark-icons/plane-dark.svg" class="icon" alt="">
+            <h3>Upload Resumes by Email</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <input type="text" class="copy-input copy-input-email" placeholder="tomtizzy@gmail.com">
+        </div>
       </section>
     </div>
 
