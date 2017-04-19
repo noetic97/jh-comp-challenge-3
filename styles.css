@@ -10,6 +10,19 @@ body {
 .icon {
   width: 15px;
   height: 15px;
+  fill: rgb(100,100,100);
+}
+
+button:hover .icon {
+  fill: white;
+}
+
+.bookmark-icon {
+  fill: black;
+}
+
+.cust-service-btn2:hover .bookmark-icon {
+  fill: blue;
 }
 
 p {
@@ -129,6 +142,10 @@ main {
 .search-button1 p {
   margin-right: 2px;
   color: rgb(22, 164, 250);
+}
+
+.search-button1:hover p {
+  color: white;
 }
 
 .search-button {
@@ -635,13 +652,12 @@ td img {
 
   .hamburger-nav {
     display: block;
-    width: 30px;
-    height: 30px;
-    margin: 10px auto;
+    width: 40px;
+    margin: 0 auto 30px auto;
   }
 
-  .hamburger-nav:hover {
-    background-color: rgb(22, 164, 250);
+  .hamburger-nav:hover .icon {
+    fill: rgba(200, 200, 200, 0.8);;
   }
 
   .header-hamburger {
