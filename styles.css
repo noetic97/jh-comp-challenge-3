@@ -608,6 +608,7 @@ td img {
 
   .bottom-container {
     display: block;
+    margin: auto; 10px;
   }
 
   .social-section {
@@ -657,7 +658,8 @@ td img {
   }
 
   table {
-    margin: auto 0;
+    margin: auto 20px;;
+    width: 90%;
   }
 
 }
