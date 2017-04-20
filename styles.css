@@ -312,6 +312,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
+  margin-top: 25px;
 }
 
 .circle-graph {
@@ -322,26 +323,22 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 100px;
+  border-width: 8px;
+  border-style: solid;
   text-align: center;
-  margin: 40px 0;
+  margin: auto 20px;
 }
 
 .circle-graph1 {
   border-color: #4bb5c2 #d8d8d8 #4bb5c2 #4bb5c2;
-  border-width: 8px;
-  border-style: solid;
 }
 
 .circle-graph2 {
   border-color: #d8d8d8 #d8d8d8 #13a8ff #13a8ff;
-  border-width: 8px;
-  border-style: solid;
 }
 
 .circle-graph3 {
   border-color: #d8d8d8 #d8d8d8 #ad6fb2 #d8d8d8;
-  border-width: 8px;
-  border-style: solid;
 }
 
 .circle-numbers {
@@ -380,11 +377,6 @@ width: 100%;
 
 .bottom-container {
   display: flex;
-}
-
-.bottom-container section {
-  display: flex;
-  flex-direction: column;
 }
 
 .middle-charts,
@@ -581,14 +573,9 @@ td img {
   padding-left: 10px;
 }
 
-.copy-input-email {
-  min-width: 200px;
-  max-width: 400px;
-}
-
 /* media queries */
 
-@media(min-width: 1500) {
+/*@media(min-width: 1500) {
   .circle-graph {
     height: 175px;
     width: 175px;
@@ -613,40 +600,45 @@ td img {
   .bar-graph {
     max-width: 700px;
   }
-}
+}*/
 
 @media(max-width: 1000px) {
   .middle-charts {
     flex-direction: column;
-  }
-
-  .circle-graph {
-    margin: 5px;
+    align-items: center;
   }
 
   .bar-graph {
     align-items: center;
   }
 
-  .copy-input-email {
-    min-width: 150px;
-  }
-
   .main-nav {
     display: inline-flex;
     flex-wrap: wrap;
   }
-   .main-nav a {
-     margin: auto 25px;
-   }
+  .main-nav a {
+    margin: auto 25px;
+  }
 
-   .copy-input {
-     width: 60%
-   }
+  .bottom-container {
+   display: block;
+   margin: auto; 10px;
+  }
 
-   .copy-buttons {
-     width: 30%
-   }
+  .social-section {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social-section div{
+    flex-direction: row;
+  }
+
+  .social-section button {
+    margin: 0 10px;
+  }
+
 }
 
 @media(max-width: 750px) {
@@ -660,11 +652,6 @@ td img {
 
   .header-nav {
     display: none;
-  }
-
-  .bottom-container {
-    display: block;
-    margin: auto; 10px;
   }
 
   .social-section {
@@ -686,30 +673,7 @@ td img {
   }
 
   .cust-service-buttons {
-    width: 60%;
-  }
-
-  .hamburger-nav {
-    display: block;
-    width: 40px;
-    margin: 0 auto 30px auto;
-  }
-
-  .hamburger-nav:hover .icon {
-    fill: rgba(200, 200, 200, 0.8);;
-  }
-
-  .header-hamburger {
-    display: inline-flex;
-  }
-
-  .header-hamburger img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .header-hamburger img:hover {
-    background-color: rgb(22, 164, 250);
+    width: 90%;
   }
 
   table {
