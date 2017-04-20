@@ -141,19 +141,19 @@ header nav svg {
 }
 
 .checkbox1 {
-  background-color: yellow;
+  background-color: rgb(251, 236, 36);
 }
 
 .checkbox2 {
-  background-color: blue;
+  background-color: rgb(22, 164, 250);
 }
 
 .checkbox3 {
-  background-color: magenta;
+  background-color: rgb(185, 42, 221);
 }
 
 .checkbox4 {
-  background-color: green;
+  background-color: rgb(63, 240, 19);
 }
 
 /* main section */
@@ -305,7 +305,7 @@ main {
 .middle-charts {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .circle-graphs-container {
@@ -511,6 +511,12 @@ div .large-social {
   flex-direction: column;
 }
 
+.large-social img {
+  margin: 0 15px 0 0;
+  height: 20px;
+  width: 20px;
+}
+
 .social-section p {
   width: 95%;
   font-size: 12px;
@@ -593,33 +599,6 @@ div .large-social {
 }
 
 /* media queries */
-
-/*@media(min-width: 1500) {
-  .circle-graph {
-    height: 175px;
-    width: 175px;
-    }
-
-  .circle-graphs {
-    margin-left: 150px;
-  }
-
-  .bar-graph {
-    max-width: 1000px;
-    margin-right: 150px;
-  }
-}
-
-@media(min-width: 1200px) {
-  .circle-graph {
-    height: 125px;
-    width: 125px;
-  }
-
-  .bar-graph {
-    max-width: 700px;
-  }
-} */
 
 @media(min-width: 1000px) {
   .facebook,
