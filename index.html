@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <div class="user-id">
       <img src="assets/imgs/cat-headshot.png" class="user-id-img" alt="user headshot">
       <div class="name-span">
@@ -142,6 +142,13 @@
           </div>
         </section>
         <section class="cust-service-buttons">
+          <div class="hamburger-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 92.8 92.8">
+              <path d="M89.8 1.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V4.8C92.8 3.1 91.5 1.8 89.8 1.8z" class="icon"/>
+              <path d="M89.8 36.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V39.8C92.8 38.1 91.5 36.8 89.8 36.8z" class="icon"/>
+              <path d="M89.8 71.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V74.8C92.8 73.1 91.5 71.8 89.8 71.8z" class="icon"/>
+            </svg>
+          </div>
           <button class="cust-service-btn1"><span>&#9679;</span>OPEN</button>
           <button class="cust-service-btn2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.2 321.2" width="15" height="15">
@@ -159,44 +166,39 @@
             </svg>
           </button>
         </section>
-        <div class="hamburger-nav">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 92.8 92.8">
-          <path d="M89.8 1.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V4.8C92.8 3.1 91.5 1.8 89.8 1.8z" class="icon"/>
-          <path d="M89.8 36.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V39.8C92.8 38.1 91.5 36.8 89.8 36.8z" class="icon"/>
-          <path d="M89.8 71.8H3c-1.7 0-3 1.3-3 3v13.3c0 1.7 1.3 3 3 3h86.8c1.7 0 3-1.3 3-3V74.8C92.8 73.1 91.5 71.8 89.8 71.8z" class="icon"/>
-          </svg>
-        </div>
         <nav class="main-nav">
-          <a href="">SUMMARY</a>
-          <a href="">APPLICANTS</a>
-          <a href="">JOB BOARD</a>
-          <a href="">INTERVIEWS</a>
-          <a href="">ACTIVITY</a>
-          <a href="">BROADCAST</a>
-          <a href="">NOTIFICATIONS</a>
+          <a href="#" class="main-nav1">SUMMARY</a>
+          <a href="#" class="main-nav2">APPLICANTS</a>
+          <a href="#" class="main-nav3">JOB BOARD</a>
+          <a href="#" class="main-nav4">INTERVIEWS</a>
+          <a href="#" class="main-nav5">ACTIVITY</a>
+          <a href="#" class="main-nav6">BROADCAST</a>
+          <a href="#" class="main-nav7">NOTIFICATIONS</a>
+          <a href="#" class="main-nav8">MORE...</a>
         </nav>
       </div>
     </section>
-
     <section class="middle-charts">
-      <div class="circle-graphs-container">
-        <div class="circle-graphs">
-          <div class="circle-graph circle-graph1">
-            <p class="circle-numbers">3,154</p>
-            <p class="circle-text">APPLICANTS</p>
-          </div>
-          <div class="circle-graph circle-graph2">
-            <p class="circle-numbers">1,546</p>
-            <p class="circle-text">INTERVIEWS</p>
-          </div>
-          <div class="circle-graph circle-graph3">
-            <p class="circle-numbers">912</p>
-            <p class="circle-text">FORWARDS</p>
+      <div class="too-many-divs">
+        <div class="circle-graphs-container">
+          <div class="circle-graphs">
+            <div class="circle-graph circle-graph1">
+              <p class="circle-numbers">3,154</p>
+              <p class="circle-text">APPLICANTS</p>
+            </div>
+            <div class="circle-graph circle-graph2">
+              <p class="circle-numbers">1,546</p>
+              <p class="circle-text">INTERVIEWS</p>
+            </div>
+            <div class="circle-graph circle-graph3">
+              <p class="circle-numbers">912</p>
+              <p class="circle-text">FORWARDS</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button class="chart-button">TOTALS &#183; Out of 5,231 views</button>
+        <div>
+          <button class="chart-button">TOTALS &#183; Out of 5,231 views</button>
+        </div>
       </div>
       <div class="bar-graph">
         <img src="assets/imgs/bar-chart.png" alt="">
@@ -209,7 +211,6 @@
       <div class="line-break"></div>
     </div>
     <div class="bottom-container">
-      <div>
         <table class="job-table">
           <tr>
             <th class="table-column1">JOB DESCRIPTION</th>
@@ -252,12 +253,16 @@
             <td class="table-column2">$58,000</td>
           </tr>
         </table>
-      </div>
       <section class="social-section">
-        <div>
-          <button class="facebook"><img src="assets/social-icons/facebook.svg" class="icon" alt="">Post to Facebook</button>
-          <button class="twitter"><img src="assets/social-icons/twitter.svg" class="icon" alt="">Tweet this Job</button>
-          <button class="linkedin"><img src="assets/social-icons/linkedin.svg" class="icon" alt="">Post to Linkedin</button>
+        <div class="large-social">
+          <button class="facebook"><img src="assets/social-icons/facebook.svg" class="icon" alt="facebook icon">Post to Facebook</button>
+          <button class="twitter"><img src="assets/social-icons/twitter.svg" class="icon" alt="twitter icon">Tweet this Job</button>
+          <button class="linkedin"><img src="assets/social-icons/linkedin.svg" class="icon" alt="linkedin icon">Post to Linkedin</button>
+        </div>
+        <div class="small-social">
+          <button class="facebook"><img src="assets/social-icons/facebook.svg" class="icon" alt="facebook icon"></button>
+          <button class="twitter"><img src="assets/social-icons/twitter.svg" class="icon" alt="twitter icon"></button>
+          <button class="linkedin"><img src="assets/social-icons/linkedin.svg" class="icon" alt="linkedin icon"></button>
         </div>
         <div class="copy-containers">
           <div class="copy-title">
@@ -285,9 +290,6 @@
         </div>
       </section>
     </div>
-
-
   </main>
-
 </body>
 </html>

@@ -210,9 +210,9 @@ main {
   border-bottom: 2px solid rgba(200, 200, 200, 0.8);
 }
 
-.cust-service {
+/*.cust-service {
   flex: 50% 0 0;
-}
+}*/
 
 .location-preview {
   display: inline-flex;
@@ -270,11 +270,16 @@ main {
   color: rgb(64, 224, 24);
 }
 
+.hamburger-nav {
+  display: none;
+}
+
 .main-nav {
   width: 90%;
   display: inline-flex;
   justify-content: space-around;
   margin-left: 15px;
+  max-width: 900px;
 }
 
 .main-nav a {
@@ -291,7 +296,7 @@ main {
   border-bottom: 3px solid rgb(22, 164, 250);
 }
 
-.hamburger-nav {
+.main-nav8 {
   display: none;
 }
 
@@ -300,6 +305,7 @@ main {
 .middle-charts {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .circle-graphs-container {
@@ -309,10 +315,6 @@ main {
 
 .circle-graphs {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  margin-top: 25px;
 }
 
 .circle-graph {
@@ -365,10 +367,18 @@ main {
   color: white;
 }
 
+.too-many-divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px
+}
+
 .bar-graph {
   max-width: 500px;
   text-align: center;
-  margin: 40px 25px;
+  margin: 25px 15px 10px 0;
 }
 
 section img {
@@ -436,8 +446,8 @@ bottom-container {
 
 table {
   background-color: white;
-  margin: 40px;
-  flex: 3 0 0;
+  margin: 0 40px 40px;
+  width: 55%;
 }
 
 th {
@@ -487,19 +497,28 @@ td {
 td img {
   height: 40px;
   width: 40px;
+  margin-right: 15px;
   border-radius: 20px;
 }
 
 .social-section {
   margin: 40px 25px 0 0;
-  width: 30%;
-  flex: 2 0 0;
+  width: 35%;
+}
+
+div .large-social {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-section p {
-  width: 100%;
+  width: 95%;
   font-size: 12px;
   margin-bottom: 15px;
+}
+
+.small-social {
+  display: none;
 }
 
 .facebook,
@@ -508,7 +527,7 @@ td img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 40px;
   color: white;
   margin-bottom: 10px;
@@ -600,9 +619,31 @@ td img {
   .bar-graph {
     max-width: 700px;
   }
-}*/
+} */
+
+@media(min-width: 1000px) {
+  .facebook,
+  .linkedin,
+  .twitter {
+    width: 95%
+  }
+
+  table {
+    margin-top: 40px;
+  }
+}
 
 @media(max-width: 1000px) {
+  .main-nav5,
+  .main-nav6,
+  .main-nav7 {
+    display: none;
+  }
+
+  .main-nav8 {
+    display: inline;
+  }
+
   .middle-charts {
     flex-direction: column;
     align-items: center;
@@ -639,15 +680,33 @@ td img {
     margin: 0 10px;
   }
 
+  table {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  div .large-social {
+    display: inline;
+  }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 900px) {
+  .main-nav4 {
+    display: none;
+  }
+}
+
+@media(max-width: 780px) {
   .middle-charts {
     display: none;
   }
 
   body {
     display: block;
+  }
+
+  h1 {
+    margin: 15px auto;
   }
 
   .header-nav {
@@ -673,12 +732,59 @@ td img {
   }
 
   .cust-service-buttons {
-    width: 90%;
+    width: 60%;
+    margin: 15px auto;
+  }
+
+  .location-preview {
+    margin: 0;
+  }
+
+  .hamburger-nav {
+    display: inline;
+  }
+
+  .hamburger-nav:hover .icon{
+    fill: rgb(200, 200, 200);
   }
 
   table {
-    margin: auto 20px;;
+    margin: 0 auto 40px;
     width: 90%;
   }
+}
 
+@media(max-width: 550px) {
+  div .large-social {
+    display: none;
+  }
+
+  .small-social {
+    display: inline;
+  }
+
+  .facebook img,
+  .twitter img,
+  .linkedin img {
+    width: 35px;
+    height:35px;
+  }
+
+  .cust-service-buttons {
+    width: 65%;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 400px) {
+  .copy-input {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .cust-service-buttons {
+    width: 80%;
+  }
 }
